@@ -1,0 +1,346 @@
+/* page-1 */
+
+
+
+
+.gapping {
+  gap: 12px;
+}
+
+.www {
+  max-width: 1300px;
+  margin: 0 auto;
+
+  padding: 0 2rem;
+}
+
+.grid-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content min-content;
+  gap: 1em 1em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "gc-1"
+    "gc-2";
+}
+
+
+.gc-2 {
+  justify-self: end;
+  grid-area: gc-2;
+
+  display: flex;
+  justify-content: end;
+}
+
+
+.gc-1 {
+  grid-area: gc-1;
+  position: relative;
+
+  z-index: 1;
+}
+
+/* .gc-2 {
+    justify-self: end;
+    grid-area: gc-2;
+
+    margin-top: -10.95rem;
+    overflow: hidden;
+
+} */
+
+.q1 {
+  height: auto;
+  width: 90%;
+}
+
+.q2 {
+  margin-top: -17rem;
+  /* height: auto;
+  width: 100%; */
+}
+
+.typo {
+  /* margin-top: 15rem; */
+  position: absolute;
+}
+
+
+.page-1-wrapper {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+.page-2 {
+  background-image: url('../images/bg.jpg');
+  padding-bottom: 15rem;
+  padding-top: 25rem;
+
+  background-repeat: no-repeat;
+  position: center;
+
+  background-size: cover;
+}
+
+.bbb {
+  padding-left: 2rem;
+  padding-right: 10rem;
+  padding-bottom: 1rem;
+}
+
+.mtt {
+  margin-top: -1rem;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "ggc-1";
+}
+
+.ggc-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1em 1em;
+  grid-auto-flow: row;
+  align-items: center;
+  grid-template-areas:
+    "ggc-2 ggc-3";
+  grid-area: ggc-1;
+}
+
+.ggc-2 {
+  grid-area: ggc-2;
+}
+
+.ggc-3 {
+  grid-area: ggc-3;
+}
+
+
+body {
+  scroll-behavior: smooth;
+  color: var(--fg-2);
+}
+
+@media only screen and (max-width: 1024px) {
+  .width-s{
+    width: 80% !important;
+
+    padding: 5rem 2rem !important;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+  .typo {
+    top: 6.5rem;
+    position: relative;
+}
+
+  .ggc-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em 1em;
+    grid-template-areas:
+      "ggc-2"
+      "ggc-3";
+    align-items: center;
+    grid-area: ggc-1;
+  }
+
+  .ggc-2 {
+    grid-area: ggc-2;
+  }
+
+  .ggc-3 {
+    grid-area: ggc-3;
+  }
+
+
+  .grid-2 {
+    width: 100%;
+  }
+
+
+  .width-s {
+    width: 100% !important;
+    padding: 5rem !important;
+  }
+
+
+  .q1 {
+    height: auto;
+    width: 80%;
+  }
+
+  /* .width-s2{
+    width: 100%;
+  } */
+
+  .width-s3 {
+    width: 80% !important;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .typo {
+    position: unset;
+  }
+
+  .p-wrapper {
+    width: 100%;
+  }
+
+  .menu {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  .width-s3 {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .q2 {
+    height: auto;
+    width: 100%;
+  }
+
+
+  .width-s {
+    width: 100% !important;
+    padding: 3rem 1rem !important;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 510px) {
+
+  .bbb {
+    width: 100%;
+    padding: 2rem;
+  }
+
+}
+
+@media only screen and (max-width: 380px) {
+  .tx-size{
+    font-size: 70px;
+  }
+
+  .bbb{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .typo-4, .typo-5 {
+    margin-top: 1rem;
+  }
+
+
+  .www{
+    padding: 0 1rem;
+  }
+}
+
+
+@media only screen and (max-width: 375px) {
+  .q2{
+    margin-top: -14rem;
+
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .q2{
+    margin-top: -12rem;
+
+  }
+}
+
+
+@media only screen and (max-width: 425px) {
+
+  .typo {
+    top: -2rem;
+    position: relative;
+  }
+
+  .width-s2{
+    width: 100%;
+  }
+  
+ 
+}
+
+
+
+
+
+
+  .floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes floating {
+    0% {
+      transform: translate(0, 0px);
+    }
+
+    50% {
+      transform: translate(0, 15px);
+    }
+
+    100% {
+      transform: translate(0, -0px);
+    }
+  }
+
+  .noise::before{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    content: "";
+    /* you can control opacity of noise  */
+    opacity: .01;  
+    z-index: 1000;
+    pointer-events: none;
+    background: url(../images/noise.gif) ;
+}
+
+
+
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {}
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {}
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {}

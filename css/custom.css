@@ -52,11 +52,11 @@
 
 @font-face {
   font-family: "Famig";
-  src: url(../Quagmire/assets/fonts/Famig.TTF);
+  src: url(../fonts/Famig.TTF);
 }
 @font-face {
   font-family: "Fleet";
-  src: url(../Quagmire/assets/fonts/Wellfleet-Regular.ttf);
+  src: url(../fonts/Wellfleet-Regular.ttf);
 }
 .ffa {
   font-family: "Famig";
